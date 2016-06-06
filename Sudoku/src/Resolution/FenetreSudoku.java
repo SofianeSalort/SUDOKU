@@ -167,60 +167,60 @@ public class FenetreSudoku extends JFrame{
 			cell1.add(liste.get(k-1));
 		}
 
-		for (int k=0;k<9;k++){
-			liste.add(new Case((k)/3+1,(k+1)%3));
+		for (int k=1;k<10;k++){
+			liste.add(new Case((k-1)/3+1,(k-1)%3+4));
 
-			cell2.add(liste.get(9+k));
-
-		}
-
-
-		for (int k=0;k<9;k++){
-			liste.add(new Case((k)/3+1,(k+1)%3));
-
-			cell3.add(liste.get(18+k));
+			cell4.add(liste.get(8+k));
 
 		}
 
-		for (int k=0;k<9;k++){
-			liste.add(new Case((k)/3+1,(k+1)%3));
 
-			cell4.add(liste.get(27+k));
+		for (int k=1;k<10;k++){
+			liste.add(new Case((k-1)/3+1,(k-1)%3+7));
 
-		}
-
-		for (int k=0;k<9;k++){
-			liste.add(new Case((k)/3+1,(k+1)%3));
-
-			cell5.add(liste.get(36+k));
+			cell7.add(liste.get(17+k));
 
 		}
 
-		for (int k=0;k<9;k++){
-			liste.add(new Case((k)/3+1,(k+1)%3));
+		for (int k=1;k<10;k++){
+			liste.add(new Case((k-1)/3+4,(k-1)%3+1));
 
-			cell6.add(liste.get(45+k));
-
-		}
-
-		for (int k=0;k<9;k++){
-			liste.add(new Case((k)/3+1,(k+1)%3));
-
-			cell7.add(liste.get(54+k));
+			cell2.add(liste.get(26+k));
 
 		}
 
-		for (int k=0;k<9;k++){
-			liste.add(new Case((k)/3+1,(k+1)%3));
+		for (int k=1;k<10;k++){
+			liste.add(new Case((k-1)/3+4,(k-1)%3+4));
 
-			cell8.add(liste.get(63+k));
+			cell5.add(liste.get(35+k));
 
 		}
 
-		for (int k=0;k<9;k++){
-			liste.add(new Case((k)/3+1,(k+1)%3));
+		for (int k=1;k<10;k++){
+			liste.add(new Case((k-1)/3+4,(k+1)%3+7));
 
-			cell9.add(liste.get(72+k));
+			cell8.add(liste.get(44+k));
+
+		}
+
+		for (int k=1;k<10;k++){
+			liste.add(new Case((k-1)/3+7,(k-1)%3+1));
+
+			cell3.add(liste.get(53+k));
+
+		}
+
+		for (int k=1;k<10;k++){
+			liste.add(new Case((k-1)/3+7,(k-1)%3+4));
+
+			cell6.add(liste.get(62+k));
+
+		}
+
+		for (int k=1;k<10;k++){
+			liste.add(new Case((k-1)/3+7,(k-1)%3+7));
+
+			cell9.add(liste.get(71+k));
 
 		}
 		
