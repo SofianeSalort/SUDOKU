@@ -197,7 +197,7 @@ public class FenetreSudoku extends JFrame{
 		}
 
 		for (int k=1;k<10;k++){
-			liste.add(new Case((k-1)/3+4,(k+1)%3+7));
+			liste.add(new Case((k-1)/3+4,(k-1)%3+7));
 
 			cell8.add(liste.get(44+k));
 
