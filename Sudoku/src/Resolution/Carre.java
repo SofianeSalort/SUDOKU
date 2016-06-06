@@ -2,16 +2,18 @@ package Resolution;
 
 import java.util.ArrayList;
 
-public class Carre {
+public class Carre extends Enssemble {
 
 	
 	private int numeroDeCarre;
 	private ArrayList<Case> cases;
 	
-	public Carre(int numerodeCarre) {
-		this.numeroDeCarre=numerodeCarre;
-		this.cases=new ArrayList<Case>(9);
+	
+	public Carre(int numeroDeCarre) {
+		super();
+		this.numeroDeCarre=numeroDeCarre;
 	}
+
 	
 	public ArrayList<Case> getCases() {
 		return this.cases;
