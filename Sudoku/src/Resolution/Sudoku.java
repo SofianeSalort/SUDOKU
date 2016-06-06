@@ -67,7 +67,8 @@ public class Sudoku {
 
 			}
 			
-			
+			this.carres.get((k-1)/9).getCases().add(this.cases.get(k-1));
+
 			
 			
 			}
