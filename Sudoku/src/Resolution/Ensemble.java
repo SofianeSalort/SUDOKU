@@ -26,7 +26,7 @@ public abstract class Ensemble {
 	}
 
 
-
+	// check si c'est possible de mettre le num駻o x � l'endroit en question
 	public boolean possible(int x){
 		boolean bonneQuestion = true;
 		if (this.estPresent(x)){
@@ -35,7 +35,9 @@ public abstract class Ensemble {
 		return bonneQuestion;
 	}
 
-
+	
+	
+	// check si il y a d駛� la valeur de x dans le carr�/colonne/ligne
 	public boolean estPresent(int x) {
 		boolean estIl = false;
 		for (int i = 0;i<9;i++){
