@@ -22,5 +22,11 @@ public class Carre extends Ensemble {
 		this.numeroDeCarre = numeroDeCarre;
 	}
 	
+	public Case getCase(int i, int j){
+		int k = i%3;
+		int l = j%3;
+		return this.getCases().get(3*k + l);
+	}
+	
 
 }
