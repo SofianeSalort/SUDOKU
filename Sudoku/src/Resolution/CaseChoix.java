@@ -5,12 +5,10 @@ import java.awt.event.MouseListener;
 
 import javax.swing.JButton;
 
+@SuppressWarnings(value = { "serial" })
+
 public class CaseChoix extends JButton implements MouseListener{
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	private Case caseChoix;
 	private int valeurChoix;
 	private FenetreChoix fenetreChoix;

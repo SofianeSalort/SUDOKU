@@ -11,10 +11,11 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+@SuppressWarnings(value = { "serial" })
+
 public class FenetreChoix extends JFrame{
 	
 
-	private static final long serialVersionUID = 1L;
 	private Case caseChoix;
 	
 	

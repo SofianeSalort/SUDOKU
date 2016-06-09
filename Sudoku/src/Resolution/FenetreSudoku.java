@@ -8,7 +8,6 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 import java.util.ArrayList;
-import java.util.List;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -16,9 +15,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
+@SuppressWarnings(value = { "serial" })
 public class FenetreSudoku extends JFrame{
 
-	private static final long serialVersionUID = 1L;
 	private ArrayList<Case> cases;
 
 	public FenetreSudoku() {
@@ -254,6 +253,7 @@ public class FenetreSudoku extends JFrame{
 		return this.cases;
 	}
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		FenetreSudoku fen= new FenetreSudoku();
 		Sudoku grille= new Sudoku(fen.getCases());

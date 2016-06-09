@@ -1,6 +1,5 @@
 package Resolution;
 
-import java.util.ArrayList;
 
 public class Carre extends Ensemble {
 

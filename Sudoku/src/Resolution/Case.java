@@ -8,10 +8,11 @@ import java.awt.event.MouseListener;
 
 import javax.swing.JButton;
 
+@SuppressWarnings(value = { "serial" })
+
 public class Case extends JButton implements ActionListener,MouseListener {
 
 
-	private static final long serialVersionUID = 1L;
 	private int valeur;
 	private int colonne;
 	private int ligne;
@@ -43,6 +44,7 @@ public class Case extends JButton implements ActionListener,MouseListener {
 
 
 
+	@SuppressWarnings("unused")
 	public void mouseClicked(MouseEvent arg0) {
 		FenetreChoix fenetre = new FenetreChoix(this);
 	}
