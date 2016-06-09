@@ -257,7 +257,7 @@ public class FenetreSudoku extends JFrame{
 	public static void main(String[] args) {
 		FenetreSudoku fen= new FenetreSudoku();
 		Sudoku grille= new Sudoku(fen.getCases());
-		
+
 	}
 
 }
