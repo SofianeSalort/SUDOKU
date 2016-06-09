@@ -2,21 +2,21 @@ package Resolution;
 
 import java.util.ArrayList;
 
-public abstract class Enssemble {
+public abstract class Ensemble {
 	private ArrayList<Case> cases;
 
 	
 
-	public Enssemble(ArrayList<Case> cases) {
+	public Ensemble(ArrayList<Case> cases) {
 		this.cases=new ArrayList<Case>(9);
 	}
 
-	public Enssemble(){
+	public Ensemble(){
 		this.cases=new ArrayList<Case>(9);
 	}
 	
 	public ArrayList<Case> getCases() {
-		return cases;
+		return this.cases;
 	}
 
 	

@@ -21,7 +21,8 @@ public class Sudoku {
 		}
 		for (int k = 1; k<82;k++){
 			switch(this.cases.get(k-1).getLigne()){
-			case 1: this.lignes.get(0).getCases().add(this.cases.get(k-1));
+			case 1: System.out.println(this.lignes.get(0).getCases());
+			this.lignes.get(0).getCases().add(this.cases.get(k-1));
 			break;
 			case 2: this.lignes.get(1).getCases().add(this.cases.get(k-1));
 			break;
@@ -68,7 +69,6 @@ public class Sudoku {
 			}
 			
 			this.carres.get((k-1)/9).getCases().add(this.cases.get(k-1));
-
 			
 			
 			}

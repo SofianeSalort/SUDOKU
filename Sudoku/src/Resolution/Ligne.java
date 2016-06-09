@@ -2,10 +2,9 @@ package Resolution;
 
 import java.util.ArrayList;
 
-public class Ligne extends Enssemble {
+public class Ligne extends Ensemble {
 
 	private int numeroDeLigne;
-	private ArrayList<Case> cases;
 
 	public Ligne(int numerodeligne) {
 		super();
@@ -13,9 +12,6 @@ public class Ligne extends Enssemble {
 	}
 
 
-	public ArrayList<Case> getCases() {
-		return this.cases;
-	}
 
 	public int getNumeroDeLigne() {
 		return this.numeroDeLigne;

@@ -2,12 +2,10 @@ package Resolution;
 
 import java.util.ArrayList;
 
-public class Carre extends Enssemble {
+public class Carre extends Ensemble {
 
 	
-	private int numeroDeCarre;
-	private ArrayList<Case> cases;
-	
+	private int numeroDeCarre;	
 	
 	public Carre(int numeroDeCarre) {
 		super();
@@ -15,10 +13,7 @@ public class Carre extends Enssemble {
 	}
 
 	
-	public ArrayList<Case> getCases() {
-		return this.cases;
-	}
-	
+
 	public int getNumeroDeCarre() {
 		return this.numeroDeCarre;
 	}
