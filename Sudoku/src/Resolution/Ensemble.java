@@ -26,19 +26,17 @@ public abstract class Ensemble {
 	}
 
 
-
+	// check si c'est possible de mettre le numéro x à l'endroit en question
 	public boolean possible(int x){
 		boolean bonneQuestion = true;
-		for (int i = 0;i<9;i++){
-			if (this.estPresent(x)){
-				bonneQuestion = false;
-			}
+		if (this.estPresent(x)){
+			bonneQuestion = false;
 		}
-		
 		return bonneQuestion;
 	}
 	
 	
+	// check si il y a déjà la valeur de x dans le carré/colonne/ligne
 	public boolean estPresent(int x) {
 		boolean estIl = false;
 		for (int i = 0;i<9;i++){
