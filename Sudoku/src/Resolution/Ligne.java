@@ -1,6 +1,6 @@
 package Resolution;
 
-import java.util.ArrayList;
+
 
 public class Ligne extends Ensemble {
 
