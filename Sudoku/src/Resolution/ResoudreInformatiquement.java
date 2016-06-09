@@ -17,7 +17,7 @@ public class ResoudreInformatiquement {
 			}
 					
 		}
-	while (this.getSusu().getLignes().get(i).possible(t) || this.getSusu().getColonnes().get(j).g )
+	while (this.getSusu().getLignes().get(i).possible(t) || this.getSusu().getColonnes().get(j) )
 }
 	
 	public void augmenter(int i,int j){
