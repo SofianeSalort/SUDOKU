@@ -21,8 +21,7 @@ public class Sudoku {
 		}
 		for (int k = 1; k<82;k++){
 			switch(this.cases.get(k-1).getLigne()){
-			case 1: System.out.println(this.lignes.get(0).getCases());
-			this.lignes.get(0).getCases().add(this.cases.get(k-1));
+			case 1: this.lignes.get(0).getCases().add(this.cases.get(k-1));
 			break;
 			case 2: this.lignes.get(1).getCases().add(this.cases.get(k-1));
 			break;
@@ -43,7 +42,7 @@ public class Sudoku {
 			default : System.out.println("erreur de ligne");
 			break;
 			}
-			
+
 			switch(this.cases.get(k-1).getColonne()){
 			case 1: this.colonnes.get(0).getCases().add(this.cases.get(k-1));
 			break;
@@ -67,13 +66,13 @@ public class Sudoku {
 			break;
 
 			}
-			
+
 			this.carres.get((k-1)/9).getCases().add(this.cases.get(k-1));
-			
-			
-			}
+
 
 		}
+
+	}
 
 
 
@@ -94,7 +93,7 @@ public class Sudoku {
 	public ArrayList<Case> getCases() {
 		return this.cases;
 	}
-
-
+	
+	
 }
 

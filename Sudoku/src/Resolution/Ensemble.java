@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public abstract class Ensemble {
 	private ArrayList<Case> cases;
 
-	
+
 
 	public Ensemble(ArrayList<Case> cases) {
 		this.cases=new ArrayList<Case>(9);
@@ -14,12 +14,12 @@ public abstract class Ensemble {
 	public Ensemble(){
 		this.cases=new ArrayList<Case>(9);
 	}
-	
+
 	public ArrayList<Case> getCases() {
 		return this.cases;
 	}
 
-	
+
 
 	public void setCases(ArrayList<Case> cases) {
 		this.cases = cases;
@@ -29,16 +29,13 @@ public abstract class Ensemble {
 
 	public boolean possible(int x){
 		boolean bonneQuestion = true;
-		for (int i = 0;i<9;i++){
-			if (this.estPresent(x)){
-				bonneQuestion = false;
-			}
+		if (this.estPresent(x)){
+			bonneQuestion = false;
 		}
-		
 		return bonneQuestion;
 	}
-	
-	
+
+
 	public boolean estPresent(int x) {
 		boolean estIl = false;
 		for (int i = 0;i<9;i++){
