@@ -2,15 +2,16 @@ package Resolution;
 
 import java.util.ArrayList;
 
-public class Ligne {
+public class Ligne extends Enssemble {
 
 	private int numeroDeLigne;
 	private ArrayList<Case> cases;
 
 	public Ligne(int numerodeligne) {
+		super();
 		this.numeroDeLigne=numerodeligne;
-		this.cases=new ArrayList<Case>(9);
 	}
+
 
 	public ArrayList<Case> getCases() {
 		return this.cases;
@@ -24,6 +25,11 @@ public class Ligne {
 	public void setNumeroDeLigne(int numeroDeLigne) {
 		this.numeroDeLigne = numeroDeLigne;
 	}
+	
+	
+	
+	
+	
 }
 
 

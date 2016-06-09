@@ -2,16 +2,18 @@ package Resolution;
 
 import java.util.ArrayList;
 
-public class Colonne {
+public class Colonne extends Enssemble {
 
 	
 	private int numeroDeColonne;
 	private ArrayList<Case> cases;
 	
-	public Colonne(int numerodeColonne) {
-		this.numeroDeColonne=numerodeColonne;
-		this.cases=new ArrayList<Case>(9);
+	
+	public Colonne(int numeroDeColonne) {
+		super();
+		this.numeroDeColonne=numeroDeColonne;
 	}
+	
 	
 	public ArrayList<Case> getCases() {
 		return this.cases;
@@ -25,4 +27,7 @@ public class Colonne {
 	public void setNumeroDeColonne(int numeroDeColonne) {
 		this.numeroDeColonne = numeroDeColonne;
 	}
+	
+	
+	
 }
